@@ -3,6 +3,7 @@ const { User, validate } = require("../models/user");
 const bcrypt = require("bcrypt");
 
 router.post("/", async (req, res) => {
+  res.send("Users");
   try {
     const { error } = validate(req.body);
     if (error)
